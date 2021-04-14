@@ -17,18 +17,18 @@ box-shadow: 4px 4px 14px #000;
 
 } 
 </style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-   <script type="text/javascript">
-       setInterval(refreshIframe1, 2000);
-       function refreshIframe1() {
-           $("#Frame1")[0].src = $("#Frame1")[0].src;
-       }
-   </script>
-   
+<script>
+window.setInterval("reloadIFrame();", 5000);
+
+function reloadIFrame() {
+ var frameHolder=document.getElementById('Frame1');
+frameHolder.src=frameHolder.src;
+}
+</script>
    
 <iframe style="border:none;" height= "700" width="710" src="https://docs.google.com/spreadsheets/d/1SEqyv80m_e9vMxZ4r3F4Dx7U4oBnpoR4c_NFefQnA8s/edit?gid=72487220&usp=sharing&embedded=true&rm=demo"></iframe>
 
-<iframe id="Frame1" style="border:none;position:relative;left: 30px;" height="700" width="220" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRXhaklyCB8jBTNSZN44Oed0CYrdavIV2l_CkLymSAj9wTKPjqsDFpiBFwxsBrjiFzCmQ7o-n7HJFkV/pubhtml?gid=648793786&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe id="Frame1" style="border:none;position:relative;left: 30px;" height="700" width="300" src="https://docs.google.com/spreadsheets/d/1SEqyv80m_e9vMxZ4r3F4Dx7U4oBnpoR4c_NFefQnA8s/edit#gid=648793786&usp=sharing&embedded=true&rm=demo&headers=false"></iframe>
 
 </body>
 </html>
